@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  </head>
+  <body>
+
+  <div class="variable-width">
+    <div>
+        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-01-dbhyman-hamlet.jpg" alt="img">
+    </div>
+    <div>
+        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-02-dbhyman-gertrude.jpg" alt="img">
+    </div>
+    <div>
+        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-03-dbhyman-claudius.jpg" alt="img">
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
+    });
+  </script>
+
+  <script>
+    $('.variable-width').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+</script>
+
+    <!-- from https://kenwheeler.github.io/slick/#go-get-it -->
+    <!-- <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+  </script> -->
+
+  </body>
+</html>

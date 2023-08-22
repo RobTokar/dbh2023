@@ -1,0 +1,237 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c3c3c3;
+}
+body {
+  /* display: flex; */
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000000;
+}
+h1 {
+  color: whitesmoke;
+}
+.dbh-logo {
+  max-height: 40px;
+}
+
+.dbh-logo-container {
+  max-height: 40px;
+  object-fit: contain;
+}
+.show_title_headline {
+  display: inline-block;
+  padding-right: 5px;
+}
+.header {
+  /* background-color: #000000; */
+  color: whitesmoke;
+  padding: 15px;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #000000;
+  color: #c3c3c3;
+}
+
+.menu li:hover {
+  color: white;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #000000;
+  color: #c3c3c3;
+}
+
+.menu li:hover {
+  color: white;
+}
+
+#rsCarousel {
+  display: none;
+}
+
+#ppCarousel {
+  display: none;
+}
+
+.mediaReviewsFloatingText {
+  display: none;
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  color: #c3c3c3
+}
+
+.mediaReviewsFloatingText b {
+  color: white
+}
+
+.mediaAndReviewsLink {
+  color: #999999;
+}
+
+.mediaAndReviewsLink a:link {
+  color: #888888;
+}
+
+.mediaAndReviewsLink a:visited {
+  color: #BBBBBB;
+}
+
+.mediaAndReviewsLink a:hover {
+  color: white;
+}
+
+.mediaAndReviewsLink a:active {
+  color: white;
+}
+
+.initiallyHidden {
+  display: none;
+}
+
+.initiallyHidden img {
+  padding: 5px 0px 5px 0px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #999999;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.footerLink {
+  color: white;
+}
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 5px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 500px;
+  list-style: none;
+  background: #000000;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  /* background: #8B53FF;
+  height: 148px;
+  width: 148px; */
+  /* border-radius: 50%; */
+}
+.card .img img {
+  max-height: 30%;
+  /* height: 80%; */
+  /* border-radius: 50%; */
+  object-fit: scale-down;
+  /* border: 10px solid #000000; */
+}
+/* .carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+} */
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}

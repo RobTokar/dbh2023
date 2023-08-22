@@ -10,16 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Style tag shows Photos on page load since there are no renderings -->
-    <style>
-        #ppCarousel {
-            display:block;
-        }
-    </style>
+    
 
     <!-- <link rel="stylesheet" type="text/css" href="static/css/stylesRWD1.css"> -->
-    <title>The Sound Inside</title>
+    <title>Hamlet</title>
     <link rel="icon" type="image/x-icon" href="static/images/DBH_FavIcon_01.jpg">
 
 </head>
@@ -100,13 +94,13 @@
         <div class="image_area">
             <div class="w3-bar w3-black">
                 <!-- SHOW TITLE & WRITER CREDIT -->
-                <div> 
-                    <h2 class="show_title_headline">The Sound Inside</h2>
-                    <h5 class="show_title_headline">Broadway-Studio 54</h5>
+                <div class="show_title_headline"> 
+                    <h2 class="show_title_headline">Hamlet</h2>
+                    <h5 class="show_title_headline">Writers' Theatre</h5>
                 </div>
                 <div class="w3-container">
                     <div class="w3-bar">
-                        <!-- <button class="w3-button w3-black" onclick="show_renderings()">RENDERINGS</button>  -->
+                        <button class="w3-button w3-black" onclick="show_renderings()">RENDERINGS</button> 
                         <button class="w3-button w3-black" onclick="show_prodPhotos()">PRODUCTION PHOTOS</button>
                         <button class="w3-button w3-black" onclick="show_research()">RESEARCH</button>
                         <button class="w3-button w3-black" onclick="show_mediaAndReviews()">MEDIA & REVIEWS</button>
@@ -115,9 +109,95 @@
             </div>
             
 
+            <!-- RENDERINGS carousel -->
+            <div id="rnCarousel" class="carousel slide" data-ride="carousel">
+            <!-- REFERENCE ON CAROUSEL: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+
+            <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#rnCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#rnCarousel" data-slide-to="1"></li>
+                    <li data-target="#rnCarousel" data-slide-to="2"></li>
+                    <li data-target="#rnCarousel" data-slide-to="3"></li>
+                    <li data-target="#rnCarousel" data-slide-to="4"></li>
+                    <li data-target="#rnCarousel" data-slide-to="5"></li>
+                    <li data-target="#rnCarousel" data-slide-to="6"></li>
+                    <li data-target="#rnCarousel" data-slide-to="7"></li>
+                </ol>
+
+                <!-- Wrapper for RENDERINGS slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-01-dbhyman-hamlet.jpg" alt="Rendering: Hamlet">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Hamlet</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-02-dbhyman-gertrude.jpg" alt="Rendering: Gertrude">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Gertrude</h3>
+                        </div> -->
+                    </div>
+                    
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-03-dbhyman-claudius.jpg" alt="Rendering: Claudius">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Claudius</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-04-dbhyman-ophelia.jpg" alt="Rendering: Ophelia" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Ophelia</h3>
+                        </div> -->
+                    </div>
+                    
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-05-dbhyman-polonius.jpg" alt="Rendering: Polonius" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Polonius</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-06-dbhyman-ghost.jpg" alt="Rendering: Ghost" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Ghost</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-07-dbhyman-marcellus.jpg" alt="Rendering: Marcellus" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Marcellus</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rn-08-dbhyman-gravedigger.jpg" alt="Rendering: Gravedigger" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Rendering: Gravedigger</h3>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#rnCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#rnCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
             <!-- PRODUCTION PHOTOS carousel -->
             <div id="ppCarousel" class="carousel slide" data-ride="carousel">
-            <!-- https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+            <!-- REFERENCE ON CAROUSEL: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
 
             <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -127,32 +207,47 @@
                     <li data-target="#ppCarousel" data-slide-to="3"></li>
                     <li data-target="#ppCarousel" data-slide-to="4"></li>
                     <li data-target="#ppCarousel" data-slide-to="5"></li>
+                    <li data-target="#ppCarousel" data-slide-to="6"></li>
+                    <li data-target="#ppCarousel" data-slide-to="7"></li>
+                    <li data-target="#ppCarousel" data-slide-to="8"></li>
                 </ol>
 
                 <!-- Wrapper for PROD PHOTO slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-pp-01-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-01-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
                     </div>
 
                     <div class="item">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-pp-02-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-02-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
                     </div>
                     
                     <div class="item">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-pp-03-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-03-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
                     </div>
 
                     <div class="item">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-pp-04-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-04-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
                     </div>
                     
                     <div class="item">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-pp-05-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-05-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
                     </div>
 
                     <div class="item">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-pp-06-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-06-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-07-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                    </div>
+                    
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-08-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-pp-09-dbhyman.jpg" alt="The Sound Inside production photo" style="width:100%;">
                     </div>
 
                 </div>
@@ -169,6 +264,7 @@
             </div>
 
 
+
             <!-- RESEARCH carousel -->
 
             <div id="rsCarousel" class="carousel slide" data-ride="carousel">
@@ -176,22 +272,18 @@
                 <ol class="carousel-indicators">
                     <li data-target="#rsCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#rsCarousel" data-slide-to="1"></li>
-                    <li data-target="#rsCarousel" data-slide-to="2"></li>
                 </ol>
 
                 <!-- Wrapper for RESEARCH slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-rs-01-dbhyman.jpg" alt="The Sound Inside research" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rs-01-dbhyman.jpg" alt="The Sound Inside research" style="width:100%;">
                     </div>
 
                     <div class="item">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-rs-02-dbhyman.jpg" alt="The Sound Inside research" style="width:100%;">
+                        <img src="static/images/hamlet-resizedWM-2023/hamlet-rs-02-dbhyman.jpg" alt="The Sound Inside research" style="width:100%;">
                     </div>
                     
-                    <div class="item">
-                        <img src="static/images/soundInside-resizedWM-202304/soundInside-rs-03-dbhyman.jpg" alt="The Sound Inside research" style="width:100%;">
-                    </div>
                 </div>
 
                 <!-- Left and right controls -->
@@ -207,54 +299,57 @@
 
             <!-- REVIEWS -->
             <div class="mediaReviewsFloatingText" id="mediaReviewsFloatingText">
-                <h3>PRESS FOR THE SOUND INSIDE BROADWAY:</h3>
+                <h3>PRESS FOR HAMLET:</h3>
                 <div class="w3-panel w3-black">
-                    <!-- https://www.w3schools.com/w3css/w3css_quotes.asp -->
+                    <!-- REFERENCE ON QUOTES: https://www.w3schools.com/w3css/w3css_quotes.asp -->
                     <p class="w3-large w3-serif">
                     <i class="fa fa-quote-right w3-xxlarge xw3-margin-right"></i>
-                    <p>&ldquo;On the other hand, a lack of visual information is a form of visual information; once you adjust to it, the dark created by the designers… becomes exceptionally expressive. Between black and jet black there&rsquo;s room for a lot of drama.<br>
-                    <b>Cromer has likewise forsworn, as a writer steers around clichés, any emotional underlining of the kind you typically get from costumes (David Hyman), sound (Daniel Kluger) and overacting.</b> His principle seems to be that of fiction itself: to force an engagement between the author&rsquo;s imagination and the reader&rsquo;s. When you enter a story, especially one that is basically a mystery, you should do so almost naked, with as little information as possible.&rdquo;<br>
-                    - New York Times, Jesse Green</p>
+                    <p>&ldquo;The color palette for the show is a chilly but extremely elegant Nordic mix of black, gray, a touch of royal sparkle and much fur <b>(applause for David Hyman&rsquo;s costumes).</b>&rdquo;<br>
+                    - Hedy Weiss, Chicago Sun Times</a>
                 </div>
 
                 <div class="w3-panel w3-black">
                     <p class="w3-large w3-serif">
                     <i class="fa fa-quote-right w3-xxlarge xw3-margin-right"></i>
-                    <p>&ldquo;Parker plays Bella Baird, a 53-year-old creative writing professor who lives and works in the most dismal of environments, courtesy of Alexander Woodward&rsquo;s unsparing set designs. Her office is a gray cube with not a drop of color to give it a hint of life. Equally drained of life, her home offers no joy, not even a sense of comfort....<b>Even her work wardrobe, supplied by David Hyman, is rendered in dark hues that reduce her to a slender shade who blends into the background of every room.&rdquo;</b><br>
-                    - Variety, Marilyn Stasio</p>
+                    <p>&ldquo;Gorgeously designed.... <b>David Hyman&rsquo;s lush costumes have a visual wit all their own.&rdquo;</b><br>
+                    <a class="mediaAndReviewsLink" href="https://www.timeout.com/chicago/theater/hamlet-at-writers-theatre-theater-review" target="blank">- Kris Vire, Time Out Chicago</a></p>
                 </div>
 
                 <div class="w3-panel w3-black">
                     <p class="w3-large w3-serif">
                     <i class="fa fa-quote-right w3-xxlarge xw3-margin-right"></i>
-                    <p>&ldquo;Vanishing projections (Aaron Rhyne), melancholy underscoring (Daniel Kluger), and <b>costumes designed with a sense of heightened realism (David Hyman) match the tone of the play with exacting precision.</b>&rdquo;<br>
-                    - Theatermania, David Gordon</p>
+                    <p>&ldquo;<b>David Hyman&rsquo;s costumes have a contemporary frame of reference but make some potent excursions to the past.</b>&rdquo;<br>
+                    <a class="mediaAndReviewsLink" href="https://www.chicagotribune.com/ct-ent-0917-hamlet-review-20120918-column.html" target="blank">- Chris Jones, Chicago Tribune</a></p>
                 </div>
 
                 <div class="w3-panel w3-black">
                     <p class="w3-large w3-serif">
-                    <i class="fa fa-quote-right w3-xxlarge xw3-margin-right"></i><p><b>&ldquo;In costumer David Hyman&rsquo;s casual clothes, Parker brings Rapp to life with a lovely looseness. She conveys Bella&rsquo;s love of books, a devotion that overrides her interest in daily life.&rdquo;</b><br>
-                    - New York Stage Review, David Finkle</p>
+                    <i class="fa fa-quote-right w3-xxlarge xw3-margin-right"></i><p><b>&ldquo;David Hyman&rsquo;s costume designs range from the historical to the contemporary without ever looking out of place or anachronistic.&rdquo;</b><br>
+                    <a class="mediaAndReviewsLink" href="https://stageandcinema.com/2012/09/19/hamlet-writers/" target="blank">- Dan Zeff, Stage and Cinema</a></p>
                 </div>
+
+                <div class="w3-panel w3-black">
+                    <p class="w3-large w3-serif">
+                    <i class="fa fa-quote-right w3-xxlarge xw3-margin-right"></i><p>&ldquo;The gripping sense of immediacy and potency owes everything to the combination of Collette Pollard&rsquo;s remarkably spacious rock-and-brick set design, Sarah Hughey&rsquo;s eloquent lighting, Mikhail Fiksel&rsquo;s evocative sound scheme and <b>David Hyman&rsquo;s suggestively antique costumes.&rdquo;</b><br>
+                    <a class="mediaAndReviewsLink" href="https://chicagoontheaisle.com/2012/09/14/review-of-shakespeares-hamlet-at-writers-theatr/" target="blank">- Lawrence B. Johnson, Chicago on the Aisle</a></p>
+                </div>
+                
             </div>
 
             <div class="show_info">
                 <hr>
-                <b>The Sound Inside</b><br>
-                Written by <b>Adam Rapp</b><br>
-                Directed by <b>David Cromer</b><br>
-                Broadway-Studio 54<br>
-                Winter 2019/2020<br>
-                Set Design: <b>Alexander Woodward</b><br>
-                Lighting Design: <b>Heather Gilbert</b><br>
-                Sound Design/ Composition: <b>Daniel Kluger</b><br>
-                Projection Design: <b>Aaron Rhyne</b><br>
-                Produced by <b>RCI</b><br>
-                Production Photos: <b>Joey Moro</b><br>
+                <b>Hamlet</b><br>
+                Written by <b>William Shakespeare</b><br>
+                Directed by <b>Michael Halberstam</b><br>
+                Writers' Theatre<br>
+                Fall 2012<br>
+                Set Design: <b>Collette Pollard</b><br>
+                Lighting Design: <b>Sarah Hughey</b><br>
             </div>
         </div>
     </div>
 
+    <!-- FOOTER-->
     <footer class="footer">
         <p>All original artwork and designs are © <a class="footerLink" href="contact.html">David B. Hyman</a></p>
     </footer>
@@ -262,6 +357,7 @@
 
     <!-- SCRIPTS -->
     <script>
+        // RESPONSIVE MENU BECOMES HAMBURGER ON SMALL SCREENS 
         function myFunction() {
             var x = document.getElementById("burgermenu1");
             if (x.className.indexOf("w3-show") == -1) {
@@ -271,39 +367,49 @@
             }
         }
 
+        // ENABLES SWIPING ON MOBILE?
+        // $('.carousel').carousel({
+        //     touch: true // default
+        // })
+
+        // ENABLES SWIPING ON MOBILE TAKE 2?
+        $(".carousel").swipe({
+        excludedElements: "input, select, textarea, .noSwipe",
+        swipeLeft: function() {
+        $(this).carousel('next');
+        },
+        swipeRight: function() {
+        $(this).carousel('prev');
+        },
+        allowPageScroll: 'vertical'
+        });
+
         // HIDES & SHOWS ELEMENTS BASED ON USER'S CHOIICE OF WORK TYPE
 
         // Renderings
         function show_renderings() {
-            // document.getElementById('soundInside-renderings_menu').style.display='block';
-            // document.getElementById('soundInside-prodPhoto_menu').style.display='none';
             document.getElementById('ppCarousel').style.display='none';
             document.getElementById('rsCarousel').style.display='none';
-            // document.getElementById('rnCarousel').style.display='block';
             document.getElementById('mediaReviewsFloatingText').style.display='none';
+            document.getElementById('rnCarousel').style.display='block';
         }
         // Production Photos
         function show_prodPhotos() {
-            // document.getElementById('soundInside-renderings_menu').style.display='none';
-            // document.getElementById('soundInside-prodPhoto_menu').style.display='block';
-            // document.getElementById('soundInside-research_menu').style.display='none';
-            // document.getElementById('bigImage').src='static/images/soundInside-resizedWM-202304/soundInside-pp-01-dbhyman.jpg';
             document.getElementById('mediaReviewsFloatingText').style.display='none';
             document.getElementById('rsCarousel').style.display='none';
-            // document.getElementById('rnCarousel').style.display='none';
+            document.getElementById('rnCarousel').style.display='none';
             document.getElementById('ppCarousel').style.display='block';
         }
         // Research
         function show_research() {
-            // document.getElementById('soundInside-renderings_menu').style.display='none';
             document.getElementById('ppCarousel').style.display='none';
-            // document.getElementById('rnCarousel').style.display='none';
+            document.getElementById('rnCarousel').style.display='none';
             document.getElementById('mediaReviewsFloatingText').style.display='none';
             document.getElementById('rsCarousel').style.display='block';
         }
         // Media and Reviews
         function show_mediaAndReviews() {
-            // document.getElementById('rnCarousel').style.display='none';
+            document.getElementById('rnCarousel').style.display='none';
             document.getElementById('ppCarousel').style.display='none';
             document.getElementById('rsCarousel').style.display='none';
             document.getElementById('mediaReviewsFloatingText').style.display='block';
@@ -311,7 +417,7 @@
     
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
 

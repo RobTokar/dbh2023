@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/stylesRWD1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>David B. Hyman Costume Design</title>
+    <link rel="icon" type="image/x-icon" href="static/images/DBH_FavIcon_01.jpg">
+
+</head>
+<body>
+  <!-- NAV BAR -->
+  <div class = "header">
+    <div class ="dbh-logo-container">
+      <a href="index.html">
+        <img class="dbh-logo" src="static/images/nav_images/dh-nav1_01.jpg" alt="David Hyman logo">
+      </a>
+    </div>
+
+    <div class="w3-bar w3-black">
+      <a href="introduction.html" class="w3-bar-item w3-button w3-hide-small">INTRODUCTION</a>
+      <a href="design.html" class="w3-bar-item w3-button w3-hide-small">DESIGN</a>
+      <a href="artwork.html" class="w3-bar-item w3-button w3-hide-small">ARTWORK</a>
+      <a href="resume.html" class="w3-bar-item w3-button w3-hide-small">RESUME</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+      <a href="press.html" class="w3-bar-item w3-button w3-hide-small">PRESS</a>
+      <a href="https://davidbhyman.wordpress.com/" class="w3-bar-item w3-button w3-hide-small">NEWS</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()" style="font-size: x-large">&#9776;</a>
+    </div>
+  </div>
+
+  <div id="burgermenu1" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a href="introduction.html" class="w3-bar-item w3-button">INTRODUCTION</a>
+    <a href="design.html" class="w3-bar-item w3-button">DESIGN</a>
+    <a href="artwork.html" class="w3-bar-item w3-button">ARTWORK</a>
+    <a href="resume.html" class="w3-bar-item w3-button">RESUME</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="press.html" class="w3-bar-item w3-button">PRESS</a>
+    <a href="https://davidbhyman.wordpress.com/" class="w3-bar-item w3-button">NEWS</a>
+  </div>
+
+  <div class="w3-container">
+    <img src="static/images/DavidBHymanHomePage_20230814.png" alt="David B. Hyman portfolio art & design" width=100%>
+
+    <footer class="footer">
+        <p>All original artwork and designs are © <a class="footerLink" href="contact.html">David B. Hyman</a></p>
+    </footer>
+
+  </div>
+
+  <script>
+        // Makes Responsive "hamburger" menu appear on small screens
+        function myFunction() {
+            var x = document.getElementById("burgermenu1");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

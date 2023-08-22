@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/stylesRWD1.css">
+    
+
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/stylesRWD1.css"> -->
+    <title>ARTWORK</title>
+    <link rel="icon" type="image/x-icon" href="static/images/DBH_FavIcon_01.jpg">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <div class = "header">
+        <a href="index.html">
+            <img class="dbh-logo" src="static/images/nav_images/dh-nav1_01.jpg" alt="David Hyman logo">
+        </a>
+
+        <div class="w3-bar w3-black">
+            <a href="introduction.html" class="w3-bar-item w3-button w3-hide-small">INTRODUCTION</a>
+            <a href="design.html" class="w3-bar-item w3-button w3-hide-small">DESIGN</a>
+            <a href="artwork.html" class="w3-bar-item w3-button w3-hide-small">ARTWORK</a>
+            <a href="resume.html" class="w3-bar-item w3-button w3-hide-small">RESUME</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+            <a href="press.html" class="w3-bar-item w3-button w3-hide-small">PRESS</a>
+            <a href="https://davidbhyman.wordpress.com/" target="blank" class="w3-bar-item w3-button w3-hide-small">NEWS</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()" style="font-size: x-large">&#9776;</a>
+        </div>
+    </div>
+
+    <div id="burgermenu1" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+        <a href="introduction.html" class="w3-bar-item w3-button">INTRODUCTION</a>
+        <a href="design.html" class="w3-bar-item w3-button">DESIGN</a>
+        <a href="artwork.html" class="w3-bar-item w3-button">ARTWORK</a>
+        <a href="resume.html" class="w3-bar-item w3-button">RESUME</a>
+        <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="press.html" class="w3-bar-item w3-button">PRESS</a>
+        <a href="https://davidbhyman.wordpress.com/" target="blank" class="w3-bar-item w3-button">NEWS</a>
+    </div>
+
+    <!-- DESIGN PORTFOLIO -->
+
+    <div class="container">
+        <div class="image_area">
+            <!-- TITLE & CREDIT -->
+                <div> 
+                    <h2 class="show_title_headline">Artwork</h2>
+                    <!-- <h5 class="show_title_headline">by David B. Hyman</h5> -->
+                </div>
+                        
+            <!-- ARTWORK carousel -->
+            <div id="artCarousel" class="carousel slide" data-ride="carousel">
+                <!-- https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#artCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#artCarousel" data-slide-to="1"></li>
+                    <li data-target="#artCarousel" data-slide-to="2"></li>
+                    <li data-target="#artCarousel" data-slide-to="3"></li>
+                    <li data-target="#artCarousel" data-slide-to="4"></li>
+                    <li data-target="#artCarousel" data-slide-to="5"></li>
+                    <li data-target="#artCarousel" data-slide-to="6"></li>
+                    <li data-target="#artCarousel" data-slide-to="7"></li>
+                    <li data-target="#artCarousel" data-slide-to="8"></li>
+                    <li data-target="#artCarousel" data-slide-to="9"></li>
+                    <li data-target="#artCarousel" data-slide-to="10"></li>
+                    <li data-target="#artCarousel" data-slide-to="11"></li>
+                    <li data-target="#artCarousel" data-slide-to="12"></li>
+                </ol>
+
+                <!-- Wrapper for PROD PHOTO slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-01-dbhyman-Charcoal-FaceStudy.jpg" alt="Face Study" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Charcoal: Face Study</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-02-dbhyman-JournalSketch-BodyStudy.jpg" alt="Body Study" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Journal Sketch: Body Study</h3>
+                        </div> -->
+                    </div>
+                    
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-03-dbhyman-OilPainting-EmergingFace.jpg" alt="Emerging Face" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Oil Painting: Emerging Face</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-04-dbhyman-PenAndInk-FaceStudy.jpg" alt="Face Study" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Pen & Ink: Face Study</h3>
+                        </div> -->
+                    </div>
+                    
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-05-dbhyman-Ink-NudeStudy.jpg" alt="Nude Study" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Ink: Nude Study</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-06-dbhyman-SIREN.jpg" alt="Siren" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Siren</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-06-dbhyman-StillLife-Watercolor2023.jpg" alt="Watercolor Still Life" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Watercolor: Still Life</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-07-dbhyman-JournalSketch-OrthodoxManWithBlackberryOnTrain.jpg" alt="Journal Sketch Orthodox Man with Blackberry on Train" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Journal Sketch: Orthodox Man with Blackberry on Train</h3>
+                        </div> -->
+                    </div>
+                    
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-08-dbhyman-Charcoal-RecliningNudeStudy.jpg" alt="Reclining Nude Study" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Charcoal: Reclining Nude Study</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-09-dbhyman-Acrylic-Abstract.jpg" alt="Acrylic Abstract" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Acrylic: Abstract</h3>
+                        </div> -->
+                    </div>
+                    
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-10-dbhyman-Journal Sketch-BodyStudy.jpg" alt="Body Study" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Journal Sketch: Body Study</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-11-dbhyman-JournalSketch-Coffee Shop.jpg" alt="Journal Sketch in Coffee Shop" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Journal Sketch: Coffee Shop</h3>
+                        </div> -->
+                    </div>
+
+                    <div class="item">
+                        <img src="static/images/artwork_resized_WM-202304/artwork-12-dbhyman-Oil-AbstractPortrait.jpg" alt="Abstract Portrait" style="width:100%;">
+                        <!-- <div class="carousel-caption">
+                            <h3>Oil: Abstract Portrait</h3>
+                        </div> -->
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#artCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#artCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>All original artwork and designs are © <a class="footerLink" href="contact.html">David B. Hyman</a></p>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        // Makes Responsive "hamburger" menu appear on small screens
+        function myFunction() {
+            var x = document.getElementById("burgermenu1");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+
+</html>
